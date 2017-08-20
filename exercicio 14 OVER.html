@@ -1,0 +1,20 @@
+Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido
+ e continue pedindo até que o usuário informe um valor válido.
+ 
+ 
+ <script>
+
+var a = prompt("insira a nota(entre zero e dez)");
+while(a > 10) {
+ 
+	var a = prompt("insira a nota(entre zero e dez)");
+	console.log("acesso negado. tente novamente");
+	
+		if(a < 10){
+			console.log("acesso permitido")
+		break;
+		}
+}
+</script>
+ 
+ 

@@ -1,0 +1,13 @@
+<script>
+window.onload = function(){
+    var vAux = new Array( parseFloat(prompt("qual o preço do 1° produto")), parseFloat(prompt("qual o preço do 2° produto")), parseFloat(prompt("qual o preço do 3° produto")));
+    vMenor = vAux[0];
+    vMaior = vAux[0];
+    for(i = 0; i < vAux.length; i++){
+        if(vMenor > vAux[i]) { vMenor = vAux[i]; }
+        if(vMaior < vAux[i]) { vMaior = vAux[i]; }
+    }
+    console.log("o menor preço eh esse:" + vMenor + "\n" +"O maior preço eh esse:" + vMaior + '\n' + "eh mais barato comprar esse:" + vMenor);
+}
+
+</script>

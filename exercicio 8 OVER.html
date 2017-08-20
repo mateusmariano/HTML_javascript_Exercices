@@ -1,0 +1,34 @@
+As Organizações Tabajara resolveram dar um aumento de salário aos seus colaboradores e lhe contraram para desenvolver o programa que calculará os reajustes.
+Faça um programa que recebe o salário de um colaborador e o reajuste segundo o seguinte critério, baseado no salário atual:
+salários até R$ 280,00 (incluindo) : aumento de 20%
+salários entre R$ 280,00 e R$ 700,00 : aumento de 15%
+salários entre R$ 700,00 e R$ 1500,00 : aumento de 10%
+salários de R$ 1500,00 em diante : aumento de 5% Após o aumento ser realizado, informe na tela:
+o salário antes do reajuste;
+o percentual de aumento aplicado;
+o valor do aumento;
+o novo salário, após o aumento.
+
+
+<script>
+
+var a = parseFloat(prompt("o seu salario eh de quanto?"));
+var b = (((a/100)*20)+a);
+var c = (((a/100)*15)+a);
+var d = (((a/100)*10)+a);
+var e = (((a/100)*5)+a);
+var f = (a/100)*20;
+var g = (a/100)*15;
+var h = (a/100)*10;
+var i = (a/100)*5;
+console.log("se salario anterior era" + a);
+
+if(a < 280){console.log("seu salario agora eh de: " + b +'\n' + "foi aplicado o aumento de 20% que equivale a: " + f);}
+else if(280< a < 700){console.log("seu salario agora eh de: " + c + '\n' + "foi aplicado o aumento de 15% que equivale a: "+ g);}
+else if(700 < a < 1500){console.log("seu salario agora eh de: " + d + '\n' +"foi aplicado o aumento de 10% que equivale a: " + h );}
+else if(a >= 1500){console.log("seu salario agora eh de: " + e + '\n' +"foi aplicado o aumento de 5% que equivale a: " + i );}
+
+
+
+
+</script>

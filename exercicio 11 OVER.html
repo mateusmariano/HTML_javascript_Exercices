@@ -1,0 +1,28 @@
+Faça um Programa que leia 2 números e em seguida pergunte ao usuário qual operação ele deseja realizar.
+ O resultado da operação deve ser acompanhado de uma frase que diga se o número é:
+par ou ímpar;
+positivo ou negativo;
+inteiro ou decimal.
+
+
+<script>
+
+var a = parseInt(prompt("insira o 1° numero"));
+var b = parseInt(prompt("insira o 2 numero"));
+var c = parseInt(prompt("qual operacao deseja realizar?'\n' 1 - soma '\n' 2 - subtracao '\n' 3 - multiplcacao '\n' 4 - divisao"));
+
+if (c == 1 ){
+	console.log(a + b);
+}
+else if (c == 2){
+	console.log(a - b);
+}
+else if (c == 3){
+	console.log(a * b);
+}
+else if (c == 4){
+	console.log(a / b);
+}
+
+
+</script>

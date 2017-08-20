@@ -1,0 +1,41 @@
+Tendo como dados de entrada a altura e o sexo de uma pessoa, construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas:
+Para homens: (72.7*h) - 58
+Para mulheres: (62.1*h) - 44.7 (h = altura)
+Peça o peso da pessoa e informe se ela está dentro, acima ou abaixo do peso.
+<BR>
+
+<script>
+
+var a = parseFloat(prompt("insira a altura"));
+var b = prompt("insira o sexo" +'\n' + "1 para homem" + '\n' + "2 para mulher");
+var c = parseFloat(prompt("insira seu peso atual"));
+
+
+
+if(b == 1, c = ((72.7 * a) - 58)){
+	console.log("o seu peso ideal eh :" + parseInt((72.7 * a) - 58) + "vc esta no peso ideal");
+
+}
+else if(b == 1, c > ((72.7 * a) - 58)){
+	console.log("o seu peso ideal eh :" + parseInt((72.7 * a) - 58) + "vc esta acima do peso");
+
+}
+else if(b == 1, c < ((72.7 * a) - 58)){
+	console.log("o seu peso ideal eh :" + parseInt((72.7 * a) - 58) + "vc esta abaixo do peso");
+
+}
+/*else if (b == 2, c = ((62.1 * a) - 44.7)){
+	console.log("o seu peso ideal eh :" + parseInt((62.1 * a) - 44.7) + "vc esta no peso ideal");
+
+}
+else if (b == 2, c > ((62.1 * a) - 44.7)){
+	console.log("o seu peso ideal eh :" + parseInt((62.1 * a) - 44.7) + "vc esta acima do peso");
+
+}
+else if (b == 2, c < ((62.1 * a) - 44.7)){
+	console.log("o seu peso ideal eh :" + parseInt((62.1 * a) - 44.7) + "vc esta abaixo do peso");
+
+}
+*/
+
+</script>

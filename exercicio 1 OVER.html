@@ -1,0 +1,50 @@
+Tendo como dados de entrada a altura e o sexo de uma pessoa, construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas:
+Para homens: (72.7*h) - 58
+Para mulheres: (62.1*h) - 44.7 (h = altura)
+Peça o peso da pessoa e informe se ela está dentro, acima ou abaixo do peso.
+<BR>
+<BR>OBS: APERTE F12
+
+<script>
+var a = parseFloat(prompt("insira sua altura"));
+var b = confirm("OK, se vc eh homem, CANCELAR se vc eh mulher");
+var x = prompt ("insira seu peso");
+var c = 72.7;
+var d = 58;
+var e = 62.1;
+var f = 44.7;
+var g = parseInt(((c * a)- d));
+var h = parseInt((e * a) - f);
+
+if (b) 
+{
+	console.log(g);
+}
+else
+{
+	console.log (h);
+}
+
+ if (x > h) {
+console.log ("MULHER:vc nao esta no peso adequado");
+}
+else if (x < h)
+{
+console.log("MULHER:vc nao esta no peso adequado");
+}
+else if (x = h) 
+{
+		console.log("MULHER:vc ta no peso");
+}
+if (x > g) {
+console.log ("HOMEM:vc nao esta no peso adequado");
+}
+else if (x < g)
+{
+console.log("HOMEM:vc nao esta no peso adequado");
+}
+else if (x = g) 
+{
+		console.log("HOMEM:vc ta no peso");
+}		
+</script>

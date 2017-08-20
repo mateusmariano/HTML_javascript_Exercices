@@ -1,0 +1,30 @@
+Faça um programa para a leitura de duas notas parciais de um aluno. O programa deve calcular a média alcançada por aluno e apresentar:
+A mensagem "Aprovado", se a média alcançada for maior ou igual a sete;
+A mensagem "Reprovado", se a média for menor do que sete;
+A mensagem "Aprovado com Distinção", se a média for igual a dez.
+
+<script>
+
+var a = parseInt(prompt("insira a primeira nota"));
+var b = parseInt(prompt("insira a segunda nota"));
+var d = confirm("vc tirou 10 nas duas provas? OK para sim e CANCEL para nao")
+var c = ((a + b)/2);
+
+ if (d)
+{
+	console.log("Aprovado com distinçao");
+}
+
+else if (c >= 7)
+{
+	console.log("vc esta aprovado");
+}
+
+else if (c < 7) 
+{
+	console.log("vc esta reprovado");
+}
+
+
+
+</script>
